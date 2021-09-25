@@ -1,0 +1,1 @@
+http://amiga.robsmithdev.co.uk/instructions/promini
