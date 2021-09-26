@@ -680,7 +680,7 @@ F 3 "" H 2850 5900 50  0001 C CNN
 	1    2850 5900
 	1    0    0    -1  
 $EndComp
-Text Notes 2600 6375 0    50   ~ 0
+Text Notes 2600 6300 0    50   ~ 0
 1-2 Power from USB (default)\n2-3 Drive powered separately from barrel jack
 Wire Wire Line
 	2200 6675 2200 6775
