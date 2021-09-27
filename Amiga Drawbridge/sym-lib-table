@@ -1,6 +1,6 @@
 (sym_lib_table
-  (lib (name arduino_pro_mini)(type Legacy)(uri "D:/ownCloud/Documents/Projects/Amiga DrawBridge/common/library/arduino_pro_mini.lib")(options "")(descr ""))
-  (lib (name floppy)(type Legacy)(uri "D:/ownCloud/Documents/Projects/Amiga DrawBridge/common/library/floppy.lib")(options "")(descr ""))
-  (lib (name ft232rl)(type Legacy)(uri "D:/ownCloud/Documents/Projects/Amiga DrawBridge/common/library/ft232rl.lib")(options "")(descr ""))
+  (lib (name arduino_pro_mini)(type Legacy)(uri $KIPRJMOD/../common/library/arduino_pro_mini.lib)(options "")(descr ""))
+  (lib (name floppy)(type Legacy)(uri $KIPRJMOD/../common/library/floppy.lib)(options "")(descr ""))
+  (lib (name ft232rl)(type Legacy)(uri $KIPRJMOD/../common/library/ft232rl.lib)(options "")(descr ""))
   (lib (name mounting)(type Legacy)(uri $KIPRJMOD/../common/library/mounting.lib)(options "")(descr ""))
 )
