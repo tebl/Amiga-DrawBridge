@@ -10,8 +10,8 @@ Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Rob Smith (http://amiga.robsmithdev.co.uk/instructions/promini)."
-Comment4 "PCB build of the DrawBridge adapter for backing up Amiga floppy disks, designed by"
+Comment3 "Robert Smith (http://amiga.robsmithdev.co.uk/instructions/promini)."
+Comment4 "PCB build of the DrawBridge adapter for backing up Amiga floppy disks, as designed by"
 $EndDescr
 $Comp
 L arduino_pro_mini:Arduino_Pro_Mini A1
@@ -683,7 +683,7 @@ U 1 1 61628176
 P 1675 6775
 F 0 "J4" H 1593 7092 50  0000 C CNN
 F 1 "PWR_EXT2" H 1593 7001 50  0000 C CNN
-F 2 "" H 1675 6775 50  0001 C CNN
+F 2 "pwr_drv:PWR_EXT" H 1675 6775 50  0001 C CNN
 F 3 "~" H 1675 6775 50  0001 C CNN
 	1    1675 6775
 	-1   0    0    -1  

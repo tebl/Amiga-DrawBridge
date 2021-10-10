@@ -6,12 +6,12 @@ encoding utf-8
 Sheet 1 1
 Title "Amiga DrawBridge"
 Date ""
-Rev "A"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Rob Smith (http://amiga.robsmithdev.co.uk/instructions/promini)."
-Comment4 "PCB build of the DrawBridge adapter for backing up Amiga floppy disks, designed by"
+Comment3 "Robert Smith (http://amiga.robsmithdev.co.uk/instructions/promini)."
+Comment4 "PCB build of the DrawBridge adapter for backing up Amiga floppy disks, as designed by"
 $EndDescr
 $Comp
 L arduino_pro_mini:Arduino_Pro_Mini A1

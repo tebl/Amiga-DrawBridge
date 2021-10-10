@@ -1,4 +1,4 @@
-19042204449236329
+19042204449509796
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83073,8 +83073,8 @@ PWR_EXT
 simple 4-pin terminal block, pitch 5.08mm, revamped version of bornier4
 terminal block bornier4
 0
-4
-4
+3
+3
 solder_bridge
 bridge
 Through hole straight pin header, 1x02, 1.00mm pitch, single row
