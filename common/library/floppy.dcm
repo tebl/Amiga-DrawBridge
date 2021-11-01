@@ -6,6 +6,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP FDC_Amstrad
+D Generic connector, double row, 02x17, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP Power
 D Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
 K screw terminal

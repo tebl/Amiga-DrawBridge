@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32_Blue_Pill
+D Generic connector, double row, 02x08, counter clockwise pin numbering scheme (similar to DIP packge numbering)
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library
