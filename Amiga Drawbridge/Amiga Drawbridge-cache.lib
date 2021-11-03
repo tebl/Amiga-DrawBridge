@@ -456,4 +456,29 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# solder_select_Jumper_4_Swappable
+#
+DEF solder_select_Jumper_4_Swappable J 0 40 Y N 1 F N
+F0 "J" 50 100 50 H V C CNN
+F1 "solder_select_Jumper_4_Swappable" 50 -200 50 H V C CNN
+F2 "" -10 0 50 H I C CNN
+F3 "" -10 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+A 50 -140 60 416 1384 0 1 0 N 95 -100 5 -100
+A 50 -40 60 416 1384 1 1 0 N 95 0 5 0
+S -50 50 150 -150 1 1 10 f
+P 2 0 1 0 -10 -100 -60 -100 N
+P 2 0 1 0 110 -100 150 -100 N
+P 2 1 1 0 -10 0 -60 0 N
+P 2 1 1 0 110 0 150 0 N
+X Pin_1a 1a -200 0 150 R 50 50 1 1 P
+X Pin_1b 1b 300 0 150 L 50 50 1 1 P
+X Pin_2a 2a -200 -100 150 R 50 50 1 1 P
+X Pin_2b 2b 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 #End Library

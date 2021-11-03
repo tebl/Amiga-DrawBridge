@@ -3,4 +3,5 @@
   (lib (name floppy)(type Legacy)(uri $KIPRJMOD/../common/library/floppy.lib)(options "")(descr ""))
   (lib (name ft232rl)(type Legacy)(uri $KIPRJMOD/../common/library/ft232rl.lib)(options "")(descr ""))
   (lib (name mounting)(type Legacy)(uri $KIPRJMOD/../common/library/mounting.lib)(options "")(descr ""))
+  (lib (name solder_select)(type Legacy)(uri $KIPRJMOD/../common/library/solder_select.lib)(options "")(descr ""))
 )
