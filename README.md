@@ -13,4 +13,4 @@ One of the more interesting features of the DrawBridge is that he made a modific
 ## Greaseweazle
 The [Greaseweazle](https://github.com/keirf/Greaseweazle) is another well known low-cost solution for working with physical floppy disks, having been created by Keir Fraser (also the creator of Flash Floppy firmware for Gotek drives). The difference from the *DrawBridge* is that instead of attempting to work with a specific disk format, it instead attempts to read the raw magnetic flux layer from the disks - allowing even damaged or disks of unknown origin to be imaged.
 
-![Greaseweazle](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-11-10%2020.31.25.jpg)
+![Greaseweazle](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-11-11%2022.20.41.jpg)
