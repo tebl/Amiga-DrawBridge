@@ -1,4 +1,4 @@
-# 1> Greaseweazle firmware
+# 1> Greaseweazle Firmware
 To start things off correctly, I've always found the STM32 boards confusing and hard to get started with. Probably because the Arduino camp has really catered to my amateurish nature by making things really simple, so if I start to *go on and on* and being all pedantic about documenting these things - it's because I haven't done much with them and I forget everything not written down.
 
 ![](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-11-09%2020.59.18.jpg)

@@ -20,7 +20,7 @@ For the technical details as well as information regarding the modules included 
 
 | Module               | Required  | Documentation | Order      |
 | -------------------- | --------- | ------------- | ---------- |
-| Amiga DrawBridge     |       Yes | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/Amiga%20Drawbridge)                  | PCBWay
+| Amiga DrawBridge     |       Yes | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/Amiga%20Drawbridge), [Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/drawbridge_firmware.md)                  | PCBWay
 | Amiga DrawBridge FA1 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20FA1) | PCBWay
 | Amiga DrawBridge FA2 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20FA2) | PCBWay
 | Amiga DrawBridge BA1 | Backplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20BA1) | PCBWay
