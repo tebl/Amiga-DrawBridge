@@ -38,7 +38,7 @@ Here I've installed the single transistor, that along with two of the resistors 
 
 ![Build 004](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_004.jpg)
 
-At this point we've gone ahead and installed the pin headers that will eventually be used to hold the STM32 board as well as a 34-pin IDC for the floppy drive itself. There's also a spot for a 26-pin version of it for use with Amstrad 3" disk drives though I've not had to a chance to test this out myself as I do not have a functioning drive or disks to put in it. Though I prefer the keying provided by the IDC sockets, you can instead opt to use standard dual-row pin headers here instead. 
+At this point we've gone ahead and installed the pin headers that will eventually be used to hold the STM32 board as well as a 34-pin IDC for the floppy drive itself. There's also a spot for a 26-pin version of it the interface for use with Amstrad 3" disk drives, but as I do not own any physical disks and/or disk drives I've not had to a chance to test this out for myself. Though I prefer the keying provided by the IDC sockets, you can instead opt to use standard dual-row pin headers here instead. 
 
 ## 1.2> Power considerations
 Simple USB devices such as the various MCU boards is oftenly limited to a 500mA current draw, most commonly this is plenty for doing small projects based on microcontrollers such as Arduino, STM32 and similar along with a handful of components. However in this case we'll be connecting up a physical floppy drive up to the device, though this *may* be enough when used with later notebook-style drives - it wasn't when I tested it with my earlier 3.5" internal floppy drives.
