@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Greaseweazle"
 Date ""
-Rev "A"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 "by the original creator, Keir Fraser."
@@ -149,7 +149,6 @@ Text Label 7875 3350 2    50   ~ 0
 ~INDEX
 Text Label 7875 3650 2    50   ~ 0
 ~REDWC
-NoConn ~ 7900 3050
 Entry Wire Line
 	7425 2050 7525 2150
 Entry Wire Line
@@ -685,12 +684,6 @@ Wire Wire Line
 	7525 2150 7900 2150
 Wire Wire Line
 	8950 3650 9325 3650
-Text Label 9300 3450 2    50   ~ 0
-~DRVSB
-Wire Wire Line
-	8950 3450 9325 3450
-Text Label 9300 3350 2    50   ~ 0
-~MOTEB
 Wire Wire Line
 	8950 3350 9325 3350
 Text Label 9300 3250 2    50   ~ 0
@@ -767,18 +760,8 @@ Wire Wire Line
 	9325 2450 8950 2450
 Entry Wire Line
 	8850 2350 8950 2450
-Text Label 7875 3250 2    50   ~ 0
-~MOTEA
-Wire Wire Line
-	7525 3250 7900 3250
-Text Label 9300 3550 2    50   ~ 0
-~MOTEA
 Wire Wire Line
 	8950 3550 9325 3550
-Entry Wire Line
-	8850 3350 8950 3450
-Entry Wire Line
-	7425 3150 7525 3250
 Wire Wire Line
 	2175 2025 2850 2025
 $Comp
@@ -894,6 +877,15 @@ Wire Bus Line
 Connection ~ 3375 1125
 Wire Bus Line
 	3375 1125 5675 1125
+Text Notes 5325 7725 0    50   ~ 0
+* R2/R3: Values picked out of a hat\n  for common 5mm LEDs, without\n  being overly bright. Adjust accordingly,\n  if you know the math and have the\n  datasheet to go with the parts.
+NoConn ~ 9325 3450
+NoConn ~ 7900 3050
+Text Label 9300 3350 2    50   ~ 0
+~MOTEB
+Text Label 9300 3550 2    50   ~ 0
+~DRVSB
+NoConn ~ 7900 3250
 Wire Bus Line
 	2700 1125 2700 1825
 Wire Bus Line
@@ -904,6 +896,4 @@ Wire Bus Line
 	3375 1125 3375 3350
 Wire Bus Line
 	8850 1125 8850 3550
-Text Notes 5325 7725 0    50   ~ 0
-* R2/R3: Values picked out of a hat\n  for common 5mm LEDs, without\n  being overly bright. Adjust accordingly,\n  if you know the math and have the\n  datasheet to go with the parts.
 $EndSCHEMATC
