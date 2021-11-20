@@ -237,12 +237,12 @@ $EndComp
 $Comp
 L power:GND #PWR0108
 U 1 1 618BB95D
-P 2200 7000
-F 0 "#PWR0108" H 2200 6750 50  0001 C CNN
-F 1 "GND" H 2205 6827 50  0000 C CNN
-F 2 "" H 2200 7000 50  0001 C CNN
-F 3 "" H 2200 7000 50  0001 C CNN
-	1    2200 7000
+P 2150 7050
+F 0 "#PWR0108" H 2150 6800 50  0001 C CNN
+F 1 "GND" H 2155 6877 50  0000 C CNN
+F 2 "" H 2150 7050 50  0001 C CNN
+F 3 "" H 2150 7050 50  0001 C CNN
+	1    2150 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -256,12 +256,6 @@ F 3 "~" H 1650 6035 50  0001 C CNN
 	1    1600 6075
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 6675 2200 6175
-Connection ~ 2200 6675
-Wire Wire Line
-	2200 6075 2200 6175
-Connection ~ 2200 6175
 $Comp
 L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 618D1BF9
@@ -293,44 +287,18 @@ $EndComp
 Text Notes 3025 5975 0    50   ~ 0
 1-2 External power\n2-3 USB-only
 Wire Wire Line
-	2200 6675 2200 6775
-Wire Wire Line
 	2525 6575 2850 6575
 Wire Wire Line
-	2200 6675 2850 6675
-Wire Wire Line
-	2850 6775 2200 6775
-Connection ~ 2200 6775
-Wire Wire Line
-	2200 6775 2200 7000
-$Comp
-L Connector:Screw_Terminal_01x03 J4
-U 1 1 61628176
-P 1675 6775
-F 0 "J4" H 1593 7092 50  0000 C CNN
-F 1 "PWR_EXT2" H 1593 7001 50  0000 C CNN
-F 2 "pwr_drv:PWR_EXT" H 1675 6775 50  0001 C CNN
-F 3 "~" H 1675 6775 50  0001 C CNN
-	1    1675 6775
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1875 6775 2200 6775
+	1875 6775 2150 6775
 Wire Wire Line
 	1900 5975 2050 5975
 Wire Wire Line
-	1900 6075 2200 6075
+	1900 6075 2150 6075
 Wire Wire Line
-	1900 6175 2200 6175
-Wire Wire Line
-	1875 6675 2050 6675
-Wire Wire Line
-	2050 6675 2050 5975
+	1900 6175 2150 6175
 Connection ~ 2050 5975
 Wire Wire Line
 	2050 5975 2275 5975
-Wire Wire Line
-	1875 6875 2850 6875
 $Comp
 L Device:LED D1
 U 1 1 6165D101
@@ -886,6 +854,40 @@ Text Label 9300 3350 2    50   ~ 0
 Text Label 9300 3550 2    50   ~ 0
 ~DRVSB
 NoConn ~ 7900 3250
+Wire Wire Line
+	1875 6575 2050 6575
+Wire Wire Line
+	2050 6575 2050 5975
+Wire Wire Line
+	1875 6875 2850 6875
+Wire Wire Line
+	1875 6675 2150 6675
+Wire Wire Line
+	2150 6075 2150 6175
+Connection ~ 2150 6175
+Wire Wire Line
+	2150 6175 2150 6675
+Connection ~ 2150 6675
+Wire Wire Line
+	2150 6675 2150 6775
+Connection ~ 2150 6775
+Wire Wire Line
+	2150 6775 2150 7050
+Wire Wire Line
+	2150 6775 2850 6775
+Wire Wire Line
+	2150 6675 2850 6675
+$Comp
+L floppy:Power_Input J4
+U 1 1 61628176
+P 1675 6775
+F 0 "J4" H 1600 7000 50  0000 C CNN
+F 1 "PWR_EXT2" H 1600 7075 50  0000 C CNN
+F 2 "pwr_drv:PWR_IN" H 1675 6775 50  0001 C CNN
+F 3 "~" H 1675 6775 50  0001 C CNN
+	1    1675 6775
+	-1   0    0    1   
+$EndComp
 Wire Bus Line
 	2700 1125 2700 1825
 Wire Bus Line

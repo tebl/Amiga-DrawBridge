@@ -18,4 +18,10 @@ K screw terminal
 F ~
 $ENDCMP
 #
+$CMP Power_Input
+D Generic screw terminal, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)
+K screw terminal
+F ~
+$ENDCMP
+#
 #End Doc Library
