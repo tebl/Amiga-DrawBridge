@@ -543,89 +543,6 @@ NoConn ~ 5150 2550
 NoConn ~ 5150 2450
 NoConn ~ 5150 2150
 NoConn ~ 5150 2050
-$Comp
-L floppy:FDC_Amstrad J6
-U 1 1 6180066B
-P 9625 2850
-F 0 "J6" H 9625 3490 50  0000 C CNN
-F 1 "FDC_Amstrad" H 9625 3399 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x13_P2.54mm_Vertical" H 9725 2700 50  0001 C CNN
-F 3 "~" H 9725 2700 50  0001 C CNN
-	1    9625 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 618059FB
-P 10000 3800
-F 0 "#PWR0106" H 10000 3550 50  0001 C CNN
-F 1 "GND" H 10005 3627 50  0000 C CNN
-F 2 "" H 10000 3800 50  0001 C CNN
-F 3 "" H 10000 3800 50  0001 C CNN
-	1    10000 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 3800 10000 3650
-Wire Wire Line
-	10000 3650 9925 3650
-Wire Wire Line
-	10000 3650 10000 3550
-Wire Wire Line
-	10000 3450 9925 3450
-Connection ~ 10000 3650
-Wire Wire Line
-	9925 3350 10000 3350
-Wire Wire Line
-	10000 3350 10000 3450
-Connection ~ 10000 3450
-Wire Wire Line
-	9925 3250 10000 3250
-Wire Wire Line
-	10000 3250 10000 3350
-Connection ~ 10000 3350
-Wire Wire Line
-	9925 3150 10000 3150
-Wire Wire Line
-	10000 3150 10000 3250
-Connection ~ 10000 3250
-Wire Wire Line
-	9925 3050 10000 3050
-Wire Wire Line
-	10000 3050 10000 3150
-Connection ~ 10000 3150
-Wire Wire Line
-	9925 2950 10000 2950
-Wire Wire Line
-	10000 2950 10000 3050
-Connection ~ 10000 3050
-Wire Wire Line
-	9925 2850 10000 2850
-Wire Wire Line
-	10000 2850 10000 2950
-Connection ~ 10000 2950
-Wire Wire Line
-	9925 2750 10000 2750
-Wire Wire Line
-	10000 2750 10000 2850
-Connection ~ 10000 2850
-Wire Wire Line
-	10000 2750 10000 2650
-Wire Wire Line
-	10000 2650 9925 2650
-Connection ~ 10000 2750
-Wire Wire Line
-	10000 2650 10000 2550
-Wire Wire Line
-	10000 2550 9925 2550
-Connection ~ 10000 2650
-Wire Wire Line
-	10000 2550 10000 2450
-Wire Wire Line
-	10000 2450 9925 2450
-Connection ~ 10000 2550
-Text Label 9300 3650 2    50   ~ 0
-~INDEX
 Wire Wire Line
 	7525 3150 7900 3150
 Wire Wire Line
@@ -650,86 +567,9 @@ Wire Wire Line
 	7525 2250 7900 2250
 Wire Wire Line
 	7525 2150 7900 2150
-Wire Wire Line
-	8950 3650 9325 3650
-Wire Wire Line
-	8950 3350 9325 3350
-Text Label 9300 3250 2    50   ~ 0
-~DIR
-Wire Wire Line
-	8950 3250 9325 3250
-Text Label 9300 3150 2    50   ~ 0
-~STEP
-Wire Wire Line
-	8950 3150 9325 3150
-Text Label 9300 3050 2    50   ~ 0
-~WDATA
-Wire Wire Line
-	8950 3050 9325 3050
-Text Label 9300 2950 2    50   ~ 0
-~WGATE
-Wire Wire Line
-	8950 2950 9325 2950
-Text Label 9300 2850 2    50   ~ 0
-~TRK00
-Wire Wire Line
-	8950 2850 9325 2850
-Text Label 9300 2750 2    50   ~ 0
-~WPT
-Wire Wire Line
-	8950 2750 9325 2750
-Text Label 9300 2650 2    50   ~ 0
-~RDATA
-Wire Wire Line
-	8950 2650 9325 2650
-Text Label 9300 2550 2    50   ~ 0
-~SIDE1
-Wire Wire Line
-	8950 2550 9325 2550
-Wire Wire Line
-	9925 3550 10000 3550
-Connection ~ 10000 3550
-Wire Wire Line
-	10000 3550 10000 3450
-Entry Wire Line
-	8850 2450 8950 2550
-Entry Wire Line
-	8850 2550 8950 2650
-Entry Wire Line
-	8850 2650 8950 2750
-Entry Wire Line
-	8850 2750 8950 2850
-Entry Wire Line
-	8850 2850 8950 2950
-Entry Wire Line
-	8850 2950 8950 3050
-Entry Wire Line
-	8850 3050 8950 3150
-Entry Wire Line
-	8850 3150 8950 3250
-Entry Wire Line
-	8850 3250 8950 3350
-Entry Wire Line
-	8850 3450 8950 3550
-Entry Wire Line
-	8850 3550 8950 3650
 Wire Bus Line
 	8850 1125 7425 1125
 Connection ~ 7425 1125
-Text Label 7875 2050 2    50   ~ 0
-~DSKCHG
-Wire Wire Line
-	7900 2050 7525 2050
-Entry Wire Line
-	7425 1950 7525 2050
-Text Label 9300 2450 2    50   ~ 0
-~DSKCHG
-Wire Wire Line
-	9325 2450 8950 2450
-Entry Wire Line
-	8850 2350 8950 2450
-Wire Wire Line
-	8950 3550 9325 3550
 Wire Wire Line
 	2175 2025 2850 2025
 $Comp
@@ -847,12 +687,7 @@ Wire Bus Line
 	3375 1125 5675 1125
 Text Notes 5325 7725 0    50   ~ 0
 * R2/R3: Values picked out of a hat\n  for common 5mm LEDs, without\n  being overly bright. Adjust accordingly,\n  if you know the math and have the\n  datasheet to go with the parts.
-NoConn ~ 9325 3450
 NoConn ~ 7900 3050
-Text Label 9300 3350 2    50   ~ 0
-~MOTEB
-Text Label 9300 3550 2    50   ~ 0
-~DRVSB
 NoConn ~ 7900 3250
 Wire Wire Line
 	1875 6575 2050 6575
@@ -888,6 +723,160 @@ F 3 "~" H 1675 6775 50  0001 C CNN
 	1    1675 6775
 	-1   0    0    1   
 $EndComp
+Text Label 9300 3550 2    50   ~ 0
+~DRVSB
+Text Label 9300 3350 2    50   ~ 0
+~MOTEB
+NoConn ~ 9325 3450
+Wire Wire Line
+	8950 3550 9325 3550
+Entry Wire Line
+	8850 3550 8950 3650
+Entry Wire Line
+	8850 3450 8950 3550
+Entry Wire Line
+	8850 3250 8950 3350
+Entry Wire Line
+	8850 3150 8950 3250
+Entry Wire Line
+	8850 3050 8950 3150
+Entry Wire Line
+	8850 2950 8950 3050
+Entry Wire Line
+	8850 2850 8950 2950
+Entry Wire Line
+	8850 2750 8950 2850
+Entry Wire Line
+	8850 2650 8950 2750
+Entry Wire Line
+	8850 2550 8950 2650
+Entry Wire Line
+	8850 2450 8950 2550
+Wire Wire Line
+	9925 3550 10000 3550
+Wire Wire Line
+	8950 2550 9325 2550
+Text Label 9300 2550 2    50   ~ 0
+~SIDE1
+Wire Wire Line
+	8950 2650 9325 2650
+Text Label 9300 2650 2    50   ~ 0
+~RDATA
+Wire Wire Line
+	8950 2750 9325 2750
+Text Label 9300 2750 2    50   ~ 0
+~WPT
+Wire Wire Line
+	8950 2850 9325 2850
+Text Label 9300 2850 2    50   ~ 0
+~TRK00
+Wire Wire Line
+	8950 2950 9325 2950
+Text Label 9300 2950 2    50   ~ 0
+~WGATE
+Wire Wire Line
+	8950 3050 9325 3050
+Text Label 9300 3050 2    50   ~ 0
+~WDATA
+Wire Wire Line
+	8950 3150 9325 3150
+Text Label 9300 3150 2    50   ~ 0
+~STEP
+Wire Wire Line
+	8950 3250 9325 3250
+Text Label 9300 3250 2    50   ~ 0
+~DIR
+Wire Wire Line
+	8950 3350 9325 3350
+Wire Wire Line
+	8950 3650 9325 3650
+Text Label 9300 3650 2    50   ~ 0
+~INDEX
+Wire Wire Line
+	10000 2450 9925 2450
+Wire Wire Line
+	10000 2550 10000 2450
+Connection ~ 10000 2550
+Wire Wire Line
+	10000 2550 9925 2550
+Wire Wire Line
+	10000 2650 10000 2550
+Connection ~ 10000 2650
+Wire Wire Line
+	10000 2650 9925 2650
+Wire Wire Line
+	10000 2750 10000 2650
+Connection ~ 10000 2750
+Wire Wire Line
+	9925 2750 10000 2750
+Wire Wire Line
+	10000 2750 10000 2850
+Connection ~ 10000 2850
+Wire Wire Line
+	9925 2850 10000 2850
+Wire Wire Line
+	10000 2850 10000 2950
+Connection ~ 10000 2950
+Wire Wire Line
+	9925 2950 10000 2950
+Wire Wire Line
+	10000 2950 10000 3050
+Connection ~ 10000 3050
+Wire Wire Line
+	9925 3050 10000 3050
+Wire Wire Line
+	10000 3050 10000 3150
+Connection ~ 10000 3150
+Wire Wire Line
+	9925 3150 10000 3150
+Wire Wire Line
+	10000 3150 10000 3250
+Connection ~ 10000 3250
+Wire Wire Line
+	9925 3250 10000 3250
+Wire Wire Line
+	10000 3250 10000 3350
+Connection ~ 10000 3350
+Wire Wire Line
+	9925 3350 10000 3350
+Wire Wire Line
+	10000 3550 10000 3450
+Wire Wire Line
+	10000 3350 10000 3450
+Connection ~ 10000 3450
+Wire Wire Line
+	10000 3450 9925 3450
+Connection ~ 10000 3550
+Wire Wire Line
+	10000 3650 10000 3550
+Wire Wire Line
+	10000 3650 9925 3650
+Connection ~ 10000 3650
+Wire Wire Line
+	10000 3800 10000 3650
+$Comp
+L power:GND #PWR0106
+U 1 1 618059FB
+P 10000 3800
+F 0 "#PWR0106" H 10000 3550 50  0001 C CNN
+F 1 "GND" H 10005 3627 50  0000 C CNN
+F 2 "" H 10000 3800 50  0001 C CNN
+F 3 "" H 10000 3800 50  0001 C CNN
+	1    10000 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L floppy:FDC_Amstrad J6
+U 1 1 6180066B
+P 9625 2850
+F 0 "J6" H 9625 3490 50  0000 C CNN
+F 1 "FDC_Amstrad" H 9625 3399 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x13_P2.54mm_Vertical" H 9725 2700 50  0001 C CNN
+F 3 "~" H 9725 2700 50  0001 C CNN
+	1    9625 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7900 2050
 Wire Bus Line
 	2700 1125 2700 1825
 Wire Bus Line
@@ -898,4 +887,7 @@ Wire Bus Line
 	3375 1125 3375 3350
 Wire Bus Line
 	8850 1125 8850 3550
+NoConn ~ 9325 2450
+Text Notes 7875 2050 2    50   ~ 0
+~DSKCHG
 $EndSCHEMATC
