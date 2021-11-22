@@ -599,7 +599,7 @@ L Connector:Barrel_Jack_Switch J2
 U 1 1 618C4216
 P 1600 6075
 F 0 "J2" H 1657 6392 50  0000 C CNN
-F 1 "PWR_EXT1" H 1657 6301 50  0000 C CNN
+F 1 "PWR_IN1" H 1657 6301 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1650 6035 50  0001 C CNN
 F 3 "~" H 1650 6035 50  0001 C CNN
 	1    1600 6075
@@ -653,15 +653,15 @@ Connection ~ 2200 6775
 Wire Wire Line
 	2200 6775 2200 7000
 $Comp
-L Connector:Screw_Terminal_01x03 J4
+L floppy:Power_Input J4
 U 1 1 61628176
 P 1675 6775
 F 0 "J4" H 1593 7092 50  0000 C CNN
-F 1 "PWR_EXT2" H 1593 7001 50  0000 C CNN
-F 2 "pwr_drv:PWR_EXT" H 1675 6775 50  0001 C CNN
+F 1 "PWR_IN2" H 1593 7001 50  0000 C CNN
+F 2 "pwr_drv:PWR_IN" H 1675 6775 50  0001 C CNN
 F 3 "~" H 1675 6775 50  0001 C CNN
 	1    1675 6775
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1875 6775 2200 6775
@@ -671,10 +671,6 @@ Wire Wire Line
 	1900 6075 2200 6075
 Wire Wire Line
 	1900 6175 2200 6175
-Wire Wire Line
-	1875 6675 2050 6675
-Wire Wire Line
-	2050 6675 2050 5975
 Connection ~ 2050 5975
 Wire Wire Line
 	2050 5975 2275 5975
@@ -823,11 +819,17 @@ Wire Wire Line
 Wire Wire Line
 	4450 4225 5600 4225
 Text Notes 4500 2525 0    50   ~ 0
-Depending on board variation, pins will\nbe oriented differently - select according\nto top right pin when oriented with PCB\nlayout.
+Depending on board variation, pins will\nbe oriented differently - select according\nto top right pin when overlaid PCB layout.
 Text Notes 4500 2850 0    50   ~ 0
 ARD_TYPE (clone type A or B):\n1-2 DTR TXO RXI VCC GND GND\n2-3 GND GND VCC RXI TXO DTR
 Text Notes 4450 5350 0    50   ~ 0
 VER_SEL:\n1A-1B, 2A-2B Classic\n1A-2A, 1B-2B Plus
+Wire Wire Line
+	1875 6575 2050 6575
+Wire Wire Line
+	2050 6575 2050 5975
+Wire Wire Line
+	1875 6675 2200 6675
 Wire Bus Line
 	3475 2100 3475 3825
 Wire Bus Line

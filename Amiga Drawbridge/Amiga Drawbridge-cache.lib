@@ -26,33 +26,6 @@ X ~ 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Screw_Terminal_01x03
-#
-DEF Connector_Screw_Terminal_01x03 J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Screw_Terminal_01x03" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TerminalBlock*:*
-$ENDFPLIST
-DRAW
-C 0 -100 25 1 1 6 N
-C 0 0 25 1 1 6 N
-C 0 100 25 1 1 6 N
-S -50 150 50 -150 1 1 10 f
-P 2 1 1 6 -21 -87 13 -120 N
-P 2 1 1 6 -21 13 13 -20 N
-P 2 1 1 6 -21 113 13 80 N
-P 2 1 1 6 -14 -80 20 -113 N
-P 2 1 1 6 -14 20 20 -13 N
-P 2 1 1 6 -14 120 20 87 N
-X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_LED
 #
 DEF Device_LED D 0 40 N N 1 F N
@@ -306,6 +279,37 @@ S -50 150 320 -250 1 1 0 f
 S 50 -250 320 -240 1 1 0 N
 S 50 150 320 140 1 1 0 N
 S 250 -40 320 -60 1 1 0 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# floppy_Power_Input
+#
+DEF floppy_Power_Input J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "floppy_Power_Input" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+T 0 55 100 60 0 0 0 12V Normal 0 L C
+T 0 55 -200 60 0 1 1 5V Normal 0 L C
+T 0 45 -100 60 0 1 1 GND Normal 0 L C
+T 0 45 0 60 0 1 1 GND Normal 0 L C
+S -50 -190 30 -210 0 1 0 N
+S -50 -90 30 -110 0 1 0 N
+S -50 10 30 -10 0 1 0 N
+S -50 110 30 90 0 1 0 N
+S 250 175 -50 -275 0 1 0 f
+S 250 225 275 -325 0 1 0 f
+S 275 -250 525 -300 0 1 0 N
+S 275 200 525 -300 0 1 0 f
+S 275 200 525 150 0 1 0 N
 X Pin_1 1 -200 100 150 R 50 50 1 1 P
 X Pin_2 2 -200 0 150 R 50 50 1 1 P
 X Pin_3 3 -200 -100 150 R 50 50 1 1 P
