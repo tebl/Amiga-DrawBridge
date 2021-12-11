@@ -9,7 +9,7 @@ I first read about the Amiga DrawBridge in a series of articles in the *Amiga Ad
   - [1.1> Soldering it together](#11-soldering-it-together)
   - [1.2> Power considerations](#12-power-considerations)
   - [1.3> Modifying FTDI-adapter](#13-modifying-ftdi-adapter)
-  - [1.4> Install Arduino Pro Mini](#14-installing-arduino-pro-mini)
+  - [1.4> Install Arduino Pro Mini](#14-install-arduino-pro-mini)
   - [1.5> Let there be light](#15-let-there-be-light)
   - [1.6> Finishing touches](#16-finishing-touches)
 - [2> Schematic](#2-schematic)
@@ -101,7 +101,7 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 | J1 **                 | 2x17 pin male IDC socket                                          |     1 |
 | J2                    | 2.1mm x 5.5mm barrel plug                                         |    (1)|
 | R1                    | 1k ohm resistor                                                   |     1 |
-| R2,R3 ***                | 330 ohm resistor                                               |    (2)|
+| R2,R3 ***             | 330 ohm resistor                                                  |    (2)|
 | Mounting ****         | Nylon M3 hex standoffs 6mm (M-F)                                  |    (4)|
 | Mounting ****         | Nylon M3 hex standoffs 8mm (M-F)                                  |    (4)|
 | Mounting ****         | Nylon M3x6mm nylon screws                                         |    (4)|
