@@ -819,7 +819,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 4225 5600 4225
 Text Notes 4500 2525 0    50   ~ 0
-Depending on board variation, pins will\nbe oriented differently - select according\nto top right pin when oriented with PCB\nlayout.
+Depending on board variation, pins will\nbe oriented differently - select according\nto top right pin when overlaid PCB layout.
 Text Notes 4500 2850 0    50   ~ 0
 ARD_TYPE (clone type A or B):\n1-2 DTR TXO RXI VCC GND GND\n2-3 GND GND VCC RXI TXO DTR
 Text Notes 4450 5350 0    50   ~ 0
