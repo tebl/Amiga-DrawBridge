@@ -1,7 +1,7 @@
 # 1> DrawBridge Firmware
-The following can be considered a subset of the [official documentation](http://amiga.robsmithdev.co.uk/instructions/promini), only rewritten to fit the PCB supplied as part of this project and the specific modules required. As the programming is done via the FT232RL module, to complete this guide you'll need an already assembled version of the [main module](https://github.com/tebl/Amiga-DrawBridge/tree/main/Amiga%20Drawbridge).
+The following can be considered a subset of the [official documentation](http://amiga.robsmithdev.co.uk/instructions/promini), only rewritten to fit the PCB design supplied as part of this repository to fit the specific modules I've used. As the programming is done via the FT232RL module, to complete this guide you'll need an already assembled version of the [main module](https://github.com/tebl/Amiga-DrawBridge/tree/main/Amiga%20Drawbridge).
 
-![Assembled Amiga DrawBridge](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-10-09%2018.19.37.jpg)
+![Assembled Amiga DrawBridge](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-12-11%2021.33.52.jpg)
 
 - [1> DrawBridge firmware](#1-drawbridge-firmware)
   - [1.1> Arduino settings](#11-arduino-settings)
@@ -28,7 +28,7 @@ Finally, we're ready to attempt to work with actual floppy disks though to ensur
 
 ![DrawBridge software](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/drawbridge_idle.png)
 
-Personally I've had less than stellar success with powering the floppy drives over USB, so I'm consistently building my units with a 5v DC barrel connector for power instead (center positive). An underpowered drive will often get stuck in reset, flickering on and off without responding properly. If this happens to you, try changing the power jumper on the board as well as powering the drive separately (the older and larger the drive, the more power-hungry they tend to be). Everything working? Let's move on.
+Personally I've had less than stellar success with powering older floppy drives over USB, so I'm consistently building my units with a 5v DC barrel connector for power instead (center positive). An underpowered drive will often get stuck in reset, flickering on and off without responding properly. If this happens to you, try changing the power jumper on the board as well as powering the drive separately (the older and larger the drive, the more power-hungry they tend to be). Everything working? Let's move on.
 
 ![DrawBridge device settings](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/drawbridge_settings.png)
 
