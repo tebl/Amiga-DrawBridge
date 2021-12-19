@@ -10,6 +10,7 @@ For this project I used a clone of what has become colloquially known the *blue 
   - [1.2> Do the blinky](#12-do-the-blinky)
   - [1.3> Installing it](#13-installing-it)
   - [1.4> Driver issues](#14-driver-issues)
+  - [1.5> Updating firmware](#15-updating-firmware)
 
 ## 1.1> Wiring it up
 Without the Micro USB side of the STM32 board connected, we're instead going to use the cheap ST Link v2 programmer you probably got along with one of them (at least I hope you did). Connect up the right-angle pins up to the ST Link adapter according to the table below, most is self-explanatory and is mostly just included for plain Arduino-heroes that may be new to the STM32 boards (like myself):
@@ -53,3 +54,20 @@ That didn't really work as expected either, until I randomly googled stuff and s
 
 ## 1.4> Driver issues
 Now that the firmware is flashed onto the STM32 board, we can consider trying to connect it up to your computer the regular way - just remove the wires going to *ST-LINK v2 adapter* first! Connecting it up using the micro USB plug, the device should be recognized automatically and installed as a *Greaseweazle*. If it didn't, check out the [official documentation](https://github.com/keirf/Greaseweazle/wiki/Software-Installation) for installation on older versions of Windows or something else entirely.
+
+## 1.5> Updating firmware
+While the previously covered methods can be used in order to directly flash a new version of the Greaseweazle onto a pre-built device, it's a bit cumbersome for end users when an earlier version of the firmware is already in place and working. For that reason, the Greaseweazle command-line tool includes an easy to use update command that can be used instead. That may sound like a lot and take a bit of explaining, but just follow along - the process is actually a lot easier than it could initially sound like.
+
+First things first though, we'll need to check the version we are currently running on the device to determine if an update is necessary. Start by downloading the updated firmware files, including the *gw* command-line tool from the official [Greasewazle repository](https://github.com/keirf/Greaseweazle/wiki/Downloads). Issuing the *gw info* command will give you a readout of the version information such as the one listed below.
+
+![Info screen](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_001.png)
+
+Here we can see that the downloaded *gw* command lists its version number as "v0.33", the firmware on the device itself is an earlier release listed as "v0.31". We'll need to fix that to get access to all of the exciting new features Keir Fraser has in all probability added to it since the device was originally built and flashed. Issuing a *gw update* at this point will provide some guidance on how to proceed, in essence we need to disconnect the device and add a jumper to the *blue pill* itself to put it into *Firmware Update Mode*.
+
+![Firmware Update Mode](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_003.jpg)
+
+Reconnecting the USB cable to your system, you should now see that it is in update mode - this is shown by the blinking LED. We can now successfully use the *gw update* command, the process will only take a fraction of a second.
+
+![Firmware Updated](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_004.png)
+
+Disconnect the USB-cable and then remove the jumper that was added earlier. You can now reconnect the device and enjoy all of those brand new features on your old Greaseweazle, hopefully without even breaking a sweat!
