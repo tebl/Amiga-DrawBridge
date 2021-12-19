@@ -6,6 +6,7 @@ The *Greaseweazle* can be kind of scary to get started with, after all it works 
   - [1.2> Usage](#12-usage)
   - [1.3> Info](#13-info)
   - [1.4> Read](#14-read)
+  - [1.5> Update](#15-update)
 
 ## 1.1> Installation
 Actually "*installing*" the *Greaseweazle* tools is stretching the definition of the word, because all you do is grab it from the official [Downloads](https://github.com/keirf/Greaseweazle/wiki/Downloads) section - then extract it somewhere that you'll be able to find them again. If you were thinking about installing the firmware onto the STM32 board, I put together a separate page on that very subject - [Greasewazle Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_firmware.md). You can always consult the [official documentation](https://github.com/keirf/Greaseweazle/wiki/Firmware-Programming), the only reason I kept my own is to keep things simple, mostly by limiting the details to the board I based my PCB on.
@@ -40,3 +41,10 @@ The ADF-format is not always able to replicate the quirkiness found on the disks
 | .scp           | 40 MB                   |
 
 Also, consult the [official documentation](https://github.com/keirf/Greaseweazle/wiki/Getting-Started) for more technically oriented examples that will probably require you to know what you are doing (so test with something less than critical).
+
+## 1.5> Update
+This command is used when updating the firmware on your Greaseweazle, the process requires first grabbing the updated firmware package from the official [Github repository](https://github.com/keirf/Greaseweazle/wiki/Downloads) and then following the instructions as shown. I realize that to beginners such as myself, this may be a bit vague so I've [documented](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_firmware.md#15-updating-firmware) the process in some more detail though you may not need this if you are familiar with STM32 development
+
+![Instructions](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_002.png)
+![Firmware Update Mode](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_003.jpg)
+![Firmware updated](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_004.png)
