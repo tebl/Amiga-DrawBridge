@@ -1,7 +1,7 @@
 # Greaseweazle
 The [Greaseweazle](https://github.com/keirf/Greaseweazle) is a well known solution for working with physical floppy disks, all within the comforts of a modern operating system. It was created Keir Fraser, also the creator of the Flash Floppy firmware for Gotek drives, as a low cost alternative to the professional-oriented backup solutions such as the KryoFlux. Given that I've combined a project for creating both a DrawBridge and Greaseweazle into one, it is would be natural to say a few words about the differences between the two.
 
-![Finished unit](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-11-17%2023.34.06.jpg)
+![Finished unit](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-12-19%2001.59.39.jpg)
 
 While *DrawBridge* was originally created to work with a specific disk format for the *Commodore Amiga*, the *Greaseweazle* will instead work with the raw magnetic flux layer from the disks. This may allow you to archive damaged, or even disks from unknown sources, to be archived for prosperity. Note that this does not necessarily mean you can use the resulting files, for that you would need a suitable emulator or similar program that have the capability of understanding the magnetic data that was originally read from the disks.
 
