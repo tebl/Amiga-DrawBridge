@@ -93,8 +93,8 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 
 | Reference             | Item                                                              | Count | Order  |
 | --------------------- | ----------------------------------------------------------------- | ----- | ------ |
-| Interface PCB         | Fabricate using Gerber files                                      |     1 | PCBWay
-| Faceplate PCB *       | Fabricate using Gerber files                                      |    (1)| PCBWay
+| Interface PCB         | Fabricate using Gerber files                                      |     1 | [PCBWay](https://www.pcbway.com/project/shareproject/Amiga_DrawBridge_fade665c.html)
+| Faceplate PCB *       | Fabricate using Gerber files                                      |    (1)| [PCBWay](https://www.pcbway.com/project/shareproject/?tag=Amiga%20DrawBridge%20Faceplates)
 | A1                    | Arduino Pro Mini                                                  |     1 |
 | A2                    | FT232RL Module                                                    |     1 |
 | D1,D2                 | 5mm LED, preferably one that is frosted                           |    (2)|
@@ -107,7 +107,7 @@ Most parts should be easy to get a hold of from your favourite local electronic 
 | Mounting ****         | Nylon M3x6mm nylon screws                                         |    (4)|
 | Floppy PSU cable      | 4 pin floppy connector with cable                                 |     1 |
 
-*) Check out [faceplate](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates) section of this repository or [PCBWay shared projects](https://www.pcbway.com/project/shareproject/?tag=DrawBridge) for available options. The default one will be linked as the order URL.
+*) Check out [faceplate](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates) section of this repository or [PCBWay shared projects](https://www.pcbway.com/project/shareproject/?tag=DrawBridge) for available options.
 
 **) Components listed are for keyed IDC connector sockets, if you want to go with a cheaper option that is probably already in a box somewhere in your workshop - use standard dual-row pin breakable headers.
 
