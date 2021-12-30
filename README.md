@@ -20,9 +20,9 @@ For the technical details as well as information regarding the modules included 
 
 | Module               | Required  | Documentation | Order      |
 | -------------------- | --------- | ------------- | ---------- |
-| Amiga DrawBridge     |       Yes | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/Amiga%20Drawbridge), [Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/drawbridge_firmware.md)                  | PCBWay
-| Amiga DrawBridge FA1 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20FA1) | PCBWay
-| Amiga DrawBridge FA2 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20FA2) | PCBWay
+| Amiga DrawBridge     |       Yes | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/Amiga%20Drawbridge), [Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/drawbridge_firmware.md)                  | [PCBWay](https://www.pcbway.com/project/shareproject/Amiga_DrawBridge_fade665c.html)
+| Amiga DrawBridge FA1 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20FA1) | [PCBWay](https://www.pcbway.com/project/shareproject/Amiga_DrawBridge_Faceplate_FA1_f181f9af.html)
+| Amiga DrawBridge FA2 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20FA2) | [PCBWay](https://www.pcbway.com/project/shareproject/Amiga_DrawBridge_Faceplate_FA2_89c6eb36.html)
 | Amiga DrawBridge BA1 | Backplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Amiga%20Drawbridge%20BA1) | PCBWay
 
 ## 2> Greaseweazle
@@ -35,6 +35,6 @@ For the technical details as well as information regarding the modules included 
 
 | Module               | Required  | Documentation | Order      |
 | -------------------- | --------- | ------------- | ---------- |
-| Greaseweazle         |       Yes | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/Greaseweazle), [Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_firmware.md), [Getting started](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_basics.md)                                                    | PCBWay
-| Greaseweazle FA1     | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Greaseweazle%20FA1)       | PCBWay
-| Greaseweazle BA1 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Greaseweazle%20FB1)           | PCBWay
+| Greaseweazle         |       Yes | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/Greaseweazle), [Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_firmware.md), [Getting started](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_basics.md)                                                    | [PCBWay](https://www.pcbway.com/project/shareproject/Greaseweazle_0ea657b2.html)
+| Greaseweazle FA1     | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Greaseweazle%20FA1)       | [PCBWay](https://www.pcbway.com/project/shareproject/Greaseweazle_Faceplate_FA1_816b583d.html)
+| Greaseweazle BA1 | Faceplate | [Documentation](https://github.com/tebl/Amiga-DrawBridge/tree/main/faceplates/Greaseweazle%20FB1)           | [PCBWay](https://www.pcbway.com/project/shareproject/Greaseweazle_Faceplate_FB1_83a3ce18.html)
