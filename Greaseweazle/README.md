@@ -12,7 +12,8 @@ While *DrawBridge* was originally created to work with a specific disk format fo
   - [1.2> Power considerations](#12-power-considerations)
   - [1.3> Modifying STM32](#13-modifying-stm32)
   - [1.4> Let there be light](#14-let-there-be-light)
-  - [1.5> Finishing touches](#15-finishing-touches)
+  - [1.5> Amstrad components](#15-amstrad-components)
+  - [1.6> Finishing touches](#16-finishing-touches)
 - [2> Schematic](#2-schematic)
 - [3> BOM](#3-bom)
 
@@ -46,7 +47,7 @@ Next step is installing the single transistor, as well as two of the resistors t
 At this point we've gone ahead and installed the pin headers that will eventually be used to hold the STM32 board as well as a 34-pin IDC for the floppy drive itself. There's also a spot for a 26-pin version of it the interface for use with Amstrad 3" disk drives, but as I do not own any physical disks and/or disk drives I've not had to a chance to test this out for myself. Though I prefer the keying provided by the IDC sockets, you can instead opt to use standard dual-row pin headers here instead. 
 
 ## 1.2> Power considerations
-Simple USB devices such as the various MCU boards is oftenly limited to a current draw of **500mA**, ordinarily this is plenty for doing small projects based on microcontrollers such as Arduino, STM32 and similar along with a handful of modern components. However in this case we'll be connecting up a physical floppy drive up to the device, though this *may* be enough when used with later notebook-style disk drives - it wasn't during my testing using older 3.5" internal floppy drives from some of my older desktop computers.
+Simple USB devices such as the various MCU boards are usually limited to a current draw of only **500mA**, plenty for doing small projects based on microcontrollers such as Arduino, STM32 and similar along with a handful of modern components. However in this case we'll be attempting to connect up a physical floppy drive up to the device and the powerdraw might easily surpass this, though this *might* be enough when used with later notebook-style disk drives. During my own testing with several older 3.5" floppy drives this was nowhere near enough, leading the drive to get stuck in a reset-loop.
 
 ![Build 005](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_005.jpg)
 
@@ -57,6 +58,8 @@ The power cable going to the drive was bought ready-made as these are still avai
 ![Build 009](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_009.jpg)
 
 If you buy one of the commonly available kit for connecting SATA/PATA drives up to a system over USB, you can get PSU that goes along with that. It's common for the cable to have a red wire for 5v, yellow for 12 and black for ground, but if you dug something really old out of a closet it might be a good idea to check the wiring as things wasn't always quite as standardized as it is now.
+
+**WARNING!** The Amstrad 3-inch disk drives have the 5v and 12v wires swapped, connecting the drives to the floppy power connector as shown will instantly kill it. Have a read through of [1.5> Amstrad components](#15-amstrad-components) if you need to work with these drives, the short story is that you need to add a second modified power cable for these specific drives. 
 
 ## 1.3> Modifying STM32
 ![Build 006](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_006.jpg)
@@ -78,16 +81,31 @@ Missing so far is the actual LEDs, which'll need a bit of vertical adjustment af
 
 ![Build 010](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_010.jpg)
 
-Start by soldering one of the pins, then reheat while pushing the LED firmly into the cutout on the faceplate. When satisfied that the results look good, you can solder the remaining pin as well as do a touch-up on the first one to ensure good connection.
+Start by soldering one of the pins, then reheat while pushing the LED firmly into the cutout on the faceplate. When satisfied that the results look good, you can solder the remaining pin as well as do a touch-up on the first one to ensure good connection. Shown below is where we should be at this point in the installation, keep on reading if you require support for 3 inch Amstrad drives as found on ZX Spectrum +3 and later Amstrad CPC computers (664 and 6128) - otherwise just skip ahead to [finishing touches](#16-finishing-touches).
 
 ![Build 011](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_011.jpg)
 
-## 1.5> Finishing touches
+## 1.5> Amstrad components
+The Greaseweazle board also has a 26-pin option for connecting a 3 inch disk drive, commonly found installed in later Amstrad-produced machines such as the Sinclair ZX Spectrum +3, Amstrad CPC 664 and 6128 as well as some external disk disk drive options such as the FD-1 (needs to have internal power cable disconnected). All of these had single-sided drives, it is also the only configuration that I've had the chance to test.
+
+Here we've gone ahead and installed the 26-pin connector as well as the 3-pin header, ensuring that we set it according to the type of drive we have available. The cable I'm using was ordered as a 26-pin ribbon cable off AliExpress without a cable twist, but before you can even consider connecting a drive up to the board we need to have a chat about safety.
+
+![Build 012](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_012.jpg)
+
+**WARNING!** The Amstrad drives have a power connector that have been reversed, at least when compared to the later PC drives that we've become more familiar in the time since the 3 inch disk drives fell into obscurity (even though it shares the same connector). Connecting an unmodified floppy power connector into one of the drives will instantly kill your drive! 
+
+![Build 013](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/greaseweazle_build_013.jpg)
+
+To handle this you can consider just picking up a cheap splitter cable from AliExpress or similar sources, we'll then need to reverse the red and yellow cable on it - remembering to mark it specifically as being for Amstrad drives only. This is done by using a needle to slightly press in the little metal hooks on these two cables and pull out the cable, carefully bend the little hook back out again before reinserting the cable into the correct position [for Amstrad drives]. If you can't find a splitter with the male connector, you can always just split together two sets of cables when soldering them to the board - personally I prefer to have it detachable as this feature would rarely be used.
+
+**NB!** As already mentioned in less than direct terms, I've not tested this solution with dual-sided drives. According to my mediocre Googling skills these drives were found on the Amstrad PCW line of computers, but as I lack a suitable drive and the corresponding disks to test things out I can't test it.
+
+## 1.6> Finishing touches
 If you still haven't installed the Greaseweazle firmware on the device, refer to [Greaseweazle Firmware](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_firmware.md) document for information on getting that done now. With the firmware in place, you can now finally connect up the drive and the device itself up to your computer using the Micro USB port (remember to power the drive via the barrel jack or molex, if needed).
 
 ![Finished unit](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/2021-11-17%2023.34.06.jpg)
 
-The supplied software is easy to use for anyone with a passing familiarity with comand-line utilities, but I've put together a separate document on the [basics](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_basics.md) of using it.
+The supplied software is easy to use for anyone with a passing familiarity with comand-line utilities, but I've put together a separate document on the [basics](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_basics.md) of actually using it.
 
 
 # 2> Schematic
