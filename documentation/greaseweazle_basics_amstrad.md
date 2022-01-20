@@ -18,7 +18,9 @@ Given that all of these drives requires both 5v and 12v to be present, you need 
 
 ## 1.2> Reading a disk
 Currently, at the time of writing this (version 0.37) does not include direct support for dumping ZX Spectrum +3/CPC disk images to the "*.dsk*"-file format recognized by emulators, so we'll need to start by doing a raw dump of the data to an SCP file first. The commands used has been shown below, the *--tracks* parameter value is especially important to get right as this limits the device to match the physical limitations of the 40 track single-sided disk drive.
-
+```
+gw read --revs=5 --tracks=c=0-39:h=0 amstrad.scp
+```
 ![Amstrad read](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_read_021.png)
 ![Amstrad read](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_read_022.png)
 

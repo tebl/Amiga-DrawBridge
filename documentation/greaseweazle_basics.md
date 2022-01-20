@@ -14,22 +14,33 @@ Actually "*installing*" the *Greaseweazle* tools is stretching the definition of
 
 ## 1.2> Usage
 The *gw* command given without any arguments will give a listing of recognized actions supported by the utility, for a more detailed usage you can use the *--help* parameter to get more details for a specific action.
-
+```
+gw
+```
 ![gw usage](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_usage.png)
+```
+gw info --help
+```
 ![gw usage details](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_usage_detail.png)
 
 ## 1.3> Info
 The action named *info* can be used to verify communication with the STM32 board when connected to your computer, consider this a basic connectivity check that can be performed without an actual floppy drive connected to the Greaseweazle.
-
+```
+gw info
+```
 ![gw usage](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_info.png)
 
 ## 1.4> Read
 This is the reason you built a *Greaseweazle* in the first place, allowing you to use the device you just built to read floppy disks from the comfort of your modern 21st century computer!
-
+```
+gw read --help
+```
 ![gw usage](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_read_001.png)
 
 That's a lot of options, nice to have in case you need them - for a getting started guide we'll just allow the program to select sensible defaults instead. The example below shows how a Commodore Amiga disk can be dumped to ADF-format, suitable for reading directly on your Gotek-modified Amiga or an emulator. 
-
+```
+gw read test.adf
+```
 ![gw usage](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_read_002.png)
 ![gw usage](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_read_003.png)
 
@@ -45,7 +56,9 @@ Also, consult the [official documentation](https://github.com/keirf/Greaseweazle
 
 ## 1.5> Update
 This command is used when updating the firmware on your Greaseweazle, the process requires first grabbing the updated firmware package from the official [Github repository](https://github.com/keirf/Greaseweazle/wiki/Downloads) and then following the instructions as shown. I realize that to beginners such as myself, this may be a bit vague so I've [documented](https://github.com/tebl/Amiga-DrawBridge/blob/main/documentation/greaseweazle_firmware.md#15-updating-firmware) the process in some more detail though you may not need this if you are familiar with STM32 development
-
+```
+gw update
+```
 ![Instructions](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_002.png)
 ![Firmware Update Mode](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_003.jpg)
 ![Firmware updated](https://github.com/tebl/Amiga-DrawBridge/raw/main/gallery/gw_update_004.png)
